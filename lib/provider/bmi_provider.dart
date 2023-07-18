@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
-import '../BMI.dart';
+import '../models/bmi.dart';
 
 class BMIProvider extends ChangeNotifier {
-  List<BMI> bmiHistory = [];
+  List<History> bmiHistory = [];
 
-  void addBMI(BMI bmi){
+  void addBMI(History bmi) {
     bmiHistory.add(bmi);
   }
-
-  
 }
